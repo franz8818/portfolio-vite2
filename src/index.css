@@ -1,76 +1,66 @@
+/* Variables */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --color-primary: #FFFFFF;
+  --color-secundary: #04B4E0;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color-background: #F2F7F9;
+  --color-transparent: transparent;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --color-icons: #B5B6B7;
+  --color-titles: #222222;
+  --color-subtitle: #888;
+  --color-text: #555;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Estilos generales */
+html {
+  font-size: 10px; /* equivale a 1rem */
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%; /* el body ocupa el 100% de la página */
+  height: auto;
+  font-family: "poppins", Helvetica, sans-serif;
+  font-size: 1.5rem; /* 15px */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow: hidden; /* Elimina todo tipo de scroll */
+
+  /* Imágen fondo */
+  background: url("./assets/img/fondo.png");
+  background-size: cover; /* Centra la imágen utilizada */
+  background-repeat: no-repeat;
+  background-position: -20px -120px;
+  /* background-color: black;  */
+
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-titles);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Estructura principal */
+.layout {
+position: relative;
+min-width: 1290px;
+width: 75%;
+height: 80vh; /* De la altura con respecto a la pantalla */
+min-height: 80vh;
+margin: 10vh auto;
+
+display: grid;
+grid-template-areas: 
+      "aside content";
+      grid-template-columns: 30% 70%;
+
+/* Sombra detras del layout */
+border-radius: 4rem;
+box-shadow: 0 0 100px -5px rgba(0, 0, 0.25); /* X Y / difuminado en px / color de la sombra*/
+/*  overflow: hidden; Elementos en bordes */
+
+/* Guía de tamaño  */
+/* border: 1px solid red; */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
