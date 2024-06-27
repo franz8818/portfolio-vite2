@@ -1,3 +1,109 @@
-.layout_aside{
-    grid-area: aside
+.layout_aside {
+    grid-area: aside;
+    /* Se vincula con el area del "aside" = 30%  */
+    border-radius: 4rem 0 0 4rem;
+    /* Redondear las esquinas de la izquierda  */
+    overflow: auto;
+    /* Elmina los scrolls */
+    overflow-y: hidden;
+    /* Elmina los scrolls verticales */
+    background-color: var(--color-secundary);
+}
+
+.aside_user-info {
+    display: flex;
+    /* Posiciona los elementos */
+    flex-direction: column;
+    /* Posiciona los en columna */
+    align-items: center;
+    /* Centrar elementos al medio */
+    text-align: center;
+    /* Centrar textos al medio */
+
+    min-width: 30rem;
+}
+
+.user-info_container-image {
+    position: relative;
+    display: inline-block;
+    /* Para que funciones como bloque */
+    width: 18rem;
+    /* Tamaño de la imágen */
+    margin-top: 7rem;
+    /* Se separe de arriba */
+    z-index: 1;
+    /* Primera capa */
+    /* overflow: hidden;  Logra que se queda la mascara del circulo */
+}
+
+.user-info_container-image::after {
+    /* Con ::after agrega un hijo al final de este contenedor */
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    z-index: 1;
+    /* Lo manda detras de la capa */
+    /* border-radius: 30rem; */
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px transparent 0px, 100%);
+    background-size: 0.6rem 0.6rem;
+}
+
+.user-info_image {
+    width: 100%;
+    background-color: var(--color-primary);
+    /* Por si la imágen no carga */
+    border: 3px solid var(--color-primary);
+    border-radius: 20rem;
+}
+
+.user-info_name {
+    margin-top: 2.6rem;
+    color: var(--color-primary);
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.user-info_job {
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: var(--color-primary);
+}
+
+.user-info_contact {
+    color: var(--color-primary);
+    margin-bottom: 3.6rem;
+}
+
+.links_social {
+    margin-top: 2rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.social_option {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    opacity: 0.9;
+    border-radius: 3rem;
+    transition: all ;
+}
+
+.social_option:hover{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.user-info_buttons {
+    color: var(--color-primary);
+}
+
+.user-info_footer {
+    color: var(--color-primary);
 }

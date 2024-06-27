@@ -10,12 +10,20 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
     <div className='layout'>
-    
-    <App />
-    <Aside />
-    <Navbar />
-    
+
+      <main className='layout_content'>
+        <App />
+      </main>
+
+      <aside className='layout_aside'>
+        <Aside />
+      </aside>
+
+      <nav className='layout_menu'>
+        <Navbar />
+      </nav>
+      
     </div>
-    
+
   </React.StrictMode>,
 )
