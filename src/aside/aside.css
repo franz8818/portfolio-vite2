@@ -1,4 +1,4 @@
-.layout_aside {
+.layout_aside{
     grid-area: aside;
     /* Se vincula con el area del "aside" = 30%  */
     border-radius: 4rem 0 0 4rem;
@@ -10,7 +10,7 @@
     background-color: var(--color-secundary);
 }
 
-.aside_user-info {
+.aside_user-info{
     display: flex;
     /* Posiciona los elementos */
     flex-direction: column;
@@ -23,20 +23,20 @@
     min-width: 30rem;
 }
 
-.user-info_container-image {
+.user-info_container-image{
     position: relative;
     display: inline-block;
     /* Para que funciones como bloque */
     width: 18rem;
     /* Tamaño de la imágen */
-    margin-top: 7rem;
+    margin-top: 5rem;
     /* Se separe de arriba */
     z-index: 1;
     /* Primera capa */
     /* overflow: hidden;  Logra que se queda la mascara del circulo */
 }
 
-.user-info_container-image::after {
+.user-info_container-image::after{
     /* Con ::after agrega un hijo al final de este contenedor */
     content: "";
     position: absolute;
@@ -51,7 +51,7 @@
     background-size: 0.6rem 0.6rem;
 }
 
-.user-info_image {
+.user-info_image{
     width: 100%;
     background-color: var(--color-primary);
     /* Por si la imágen no carga */
@@ -59,25 +59,25 @@
     border-radius: 50%;
 }
 
-.user-info_name {
+.user-info_name{
     margin-top: 2.6rem;
     color: var(--color-primary);
     font-size: 3.2rem;
     font-weight: bold;
 }
 
-.user-info_job {
+.user-info_job{
     font-size: 1.7rem;
     font-weight: 200;
     color: var(--color-primary);
 }
 
-.user-info_contact {
+.user-info_contact{
     color: var(--color-primary);
     margin-bottom: 3.6rem;
 }
 
-.links_social {
+.links_social{
     margin-top: 2rem;
     text-align: center;
 
@@ -85,7 +85,7 @@
     flex-direction: row;
 }
 
-.social_option {
+.social_option{
     height: 5rem;
     width: 5rem;
     font-size: 3rem; 
@@ -101,10 +101,29 @@
     background-color: rgba(255, 255, 255, 0.20); /* Forma un cuadrado con ese color de fondo*/
 }
 
-.user-info_buttons {
+.user-info_buttons{
     color: var(--color-primary);
+    margin-bottom: 4rem;
+}
+
+.user-info_btn{
+    border: 2px solid var(--color-primary);
+    padding: 1.5rem;
+    padding-top: 1.3rem;
+    border-radius: 3.2rem;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+    transition: all 300ms ease-in-out;
+    color: var(--color-primary);
+}
+
+.user-info_btn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
 }
 
 .user-info_footer {
     color: var(--color-primary);
+    position: absolute;
+    bottom: 4rem;
+    font-size: 1.2rem;
 }

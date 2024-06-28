@@ -1,3 +1,35 @@
 .layout_menu{
-    display: none !important;
+    display: block;
+    position: absolute; /* En este caso sube el menu en la parte izquierda superior */
+    top: 0; /* Especifica parte de la posición de un elemento posicionado */
+    right: -105px; /* Lo úbica en la parte derecha */
+    min-width: 11rem;
+    background-color: var(--color-)transparent;
+}
+
+.menu_list{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    width: 60%;
+    min-width: 32rem;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 3rem -0.5rem rgba(0,0,0,0.15);
+    border-radius: 5.5rem;
+}
+
+.menu_option{
+    display: block; /* El elemento genera un cuadro de elemento de bloque. */
+    width: 100%;
+    text-align: center;
+}
+
+.menu_icon{
+    font-size: 2.8rem;
+    color: var(--color-icons);
+}
+
+.menu_overlay {
+    opacity: 0; /* Elimino los textos */
 }

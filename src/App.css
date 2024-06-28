@@ -1,3 +1,31 @@
 .layout_content{
     grid-area: content; /* Se vincula con el area del "content" = 70%  */
+    height: 100%; /* Altura definida */
+    min-height: 100%; /* Altura minima definida */
+    min-height: 100%;
+
+    background-color: var(--color-secundary);
+    border-radius: 0 10rem 10rem 0;
+}
+
+.content_page {
+    min-height: 100%; /* Altura minima definida */
+    background-color: var(--color-primary);
+    border-radius: 3.2rem;
+    
+    display: flex; /* Activa la funcionalidad "flex" */
+    flex-direction: column; /* Uno debajo del otro */
+    align-items: center; /* Elementos verticalmente al centro */
+    justify-content: center; /* Elementos alineados al centro */
+}
+
+.page_name{
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+}
+
+.page_job{
+    font-size: 2.2rem;
+    font-weight: lighter;
+    color: var(--color-subtitle);
 }

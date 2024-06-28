@@ -10,7 +10,7 @@ function Navbar() {
           <li className='menu_option'>
             <a className="menu_link" href='App.jsx'>
               <i className='menu_icon fa-solid fa-house'></i>
-              <span className='menu_overlay'>Home</span>
+              <span className='menu_overlay'>Home</span> {/* Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea. */}
             </a>
           </li>
 
