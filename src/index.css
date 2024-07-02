@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Estructura principal */
 .layout {
 position: relative;
-min-width: 1290px;
+min-width: 1200px;
 width: 75%;
 height: 80vh; /* De la altura con respecto a la pantalla */
 min-height: 80vh;

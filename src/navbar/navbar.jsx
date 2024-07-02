@@ -45,7 +45,7 @@ function Navbar() {
           <li className='menu_option'>
             <a className="menu_link" href='App.jsx'>
               <i className='menu_icon fa-brands fa-linkedin'></i>
-              <span className='menu_overlay'>LinkedIn</span>
+              {/* <span className='menu_overlay'>LinkedIn</span> */}
             </a>
           </li>
         </ul>

@@ -1,35 +1,49 @@
 .layout_menu{
     display: block;
+    
+    min-width: 11rem;
     position: absolute; /* En este caso sube el menu en la parte izquierda superior */
     top: 0; /* Especifica parte de la posición de un elemento posicionado */
-    right: -105px; /* Lo úbica en la parte derecha */
-    min-width: 11rem;
+    right: -125px; /* Lo úbica en la parte derecha */
+   
+    
     background-color: var(--color-)transparent;
 }
 
 .menu_list{
+    position: relative; 
     display: flex;
     flex-direction: column;
+
     
-    position: relative;
+    padding: 2rem 0; /* 1. Son los de arriba y abajo, 2-Izqueirda y derecha */
     width: 60%;
-    min-width: 32rem;
+
     background-color: var(--color-primary);
     box-shadow: 0 0 3rem -0.5rem rgba(0,0,0,0.15);
-    border-radius: 5.5rem;
+    border-radius: 6rem;
 }
 
 .menu_option{
-    display: block; /* El elemento genera un cuadro de elemento de bloque. */
+    display: block; /* El elemento genera un cuadro de elemento de bloque */
     width: 100%;
     text-align: center;
+}
+
+.menu_option:hover .menu_icon{ /* Cuando hago Hover los .menu_icon cambian de color */
+    color: var(--color-secundary);
 }
 
 .menu_icon{
     font-size: 2.8rem;
     color: var(--color-icons);
+    transition: all 300ms ease-in-out; /* Aplica a los iconos */
 }
 
 .menu_overlay {
     opacity: 0; /* Elimino los textos */
+}
+
+.menu_link {
+    
 }
