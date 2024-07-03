@@ -1,4 +1,4 @@
-.content_page {
+.content_info {
     min-height: 100%; /* Altura minima definida */
     background-color: var(--color-primary);
     border-radius: 3.2rem;
@@ -7,15 +7,4 @@
     flex-direction: column; /* Uno debajo del otro */
     align-items: center; /* Elementos verticalmente al centro */
     justify-content: center; /* Elementos alineados al centro */
-}
-
-.page_name{
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
-}
-
-.page_job{
-    font-size: 2.2rem;
-    font-weight: lighter;
-    color: var(--color-subtitle);
 }

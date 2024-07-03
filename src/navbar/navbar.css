@@ -1,11 +1,10 @@
 .layout_menu{
-    display: block;
-    
+    display: block; 
     min-width: 11rem;
-    position: absolute; /* En este caso sube el menu en la parte izquierda superior */
+    
+    position: absolute; /* Sive para posicionar el elemento donde nosotros queramos */
     top: 0; /* Especifica parte de la posición de un elemento posicionado */
     right: -125px; /* Lo úbica en la parte derecha */
-   
     
     background-color: var(--color-)transparent;
 }
@@ -14,19 +13,20 @@
     position: relative; 
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between; /* Separa los iconos entre si */
     
+    min-height: 25rem; /* Define el tamaño de la caja que contiene los iconos */
     padding: 2rem 0; /* 1. Son los de arriba y abajo, 2-Izqueirda y derecha */
-    width: 60%;
+    width: 50%;
 
     background-color: var(--color-primary);
     box-shadow: 0 0 3rem -0.5rem rgba(0,0,0,0.15);
-    border-radius: 6rem;
+    border-radius: 4rem;
 }
 
 .menu_option{
     display: block; /* El elemento genera un cuadro de elemento de bloque */
-    width: 100%;
+    width: 100%; 
     text-align: center;
 }
 
@@ -35,15 +35,30 @@
 }
 
 .menu_icon{
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     color: var(--color-icons);
     transition: all 300ms ease-in-out; /* Aplica a los iconos */
 }
 
 .menu_overlay {
-    opacity: 0; /* Elimino los textos */
+    position: absolute; /* Ayuda a mover como uno quiera */
+    right: 0; /* Queda al pixel 0 de la caja que lo contiene */
+    display: block;
+    margin-top: -3rem; /* Los textos quedan encima de los iconos */
+    padding: 0.5rem 1rem; /* Arriba/Abajo - Izquierda/Derecha */
+    /* display: none;  Elimino los textos */
+
+    color: var(--color-primary);
+    opacity: 0;
+    background-color: var(--color-secundary);
+    white-space: nowrap; /* Elimina el salto de linea */
+
+    transition: all 400ms ease-in-out;
 }
 
-.menu_link {
-    
+.menu_option:hover .menu_overlay{
+    opacity: 1;
+    right: 100%;
+    border-radius: 4rem;
 }
+
