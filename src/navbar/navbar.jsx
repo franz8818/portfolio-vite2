@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'
 
@@ -24,31 +25,24 @@ function Navbar() {
           </li>
 
           <li className='menu_option'>
-            <a className="menu_link" href='proyectos.jsx'>
+            <Link className="menu_link" to='/projects'>
               <i className='menu_icon fa-solid fa-briefcase'></i>
               <span className='menu_overlay'>Proyectos</span>
-            </a>
+            </Link>
           </li>
 
           <li className='menu_option'>
-            <a className="menu_link" href='App.jsx'>
+            <Link className="menu_link" to='/studys'>
               <i className='menu_icon fa-solid fa-graduation-cap'></i>
               <span className='menu_overlay'>Estudios</span>
-            </a>
+            </Link>
           </li>
 
           <li className='menu_option'>
-            <a className="menu_link" href='App.jsx'>
-              <i className='menu_icon fa-brands fa-github'></i>
-              <span className='menu_overlay'>GitHub</span>
-            </a>
-          </li>
-          
-          <li className='menu_option'>
-            <a className="menu_link" href='App.jsx'>
-              <i className='menu_icon fa-brands fa-linkedin'></i>
-              <span className='menu_overlay'>LinkedIn</span>
-            </a>
+            <Link className="menu_link" to='/contact'>
+              <i className="menu_icon fa-solid fa-envelope"></i>
+              <span className='menu_overlay'>Contacto</span>
+            </Link>
           </li>
 
         </ul>

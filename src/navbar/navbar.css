@@ -3,7 +3,7 @@
     min-width: 11rem;
     
     position: absolute; /* Sive para posicionar el elemento donde nosotros queramos */
-    top: 0; /* Especifica parte de la posición de un elemento posicionado */
+    top: 18%; /* Especifica parte de la posición de un elemento posicionado */
     right: -125px; /* Lo úbica en la parte derecha */
     
     background-color: var(--color-)transparent;

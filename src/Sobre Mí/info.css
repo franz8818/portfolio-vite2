@@ -1,10 +1,4 @@
-.content_info {
-    min-height: 100%; /* Altura minima definida */
-    background-color: var(--color-primary);
-    border-radius: 3.2rem;
-    
-    display: flex; /* Activa la funcionalidad "flex" */
-    flex-direction: column; /* Uno debajo del otro */
-    align-items: center; /* Elementos verticalmente al centro */
-    justify-content: center; /* Elementos alineados al centro */
+.content_page {
+   
 }
+
