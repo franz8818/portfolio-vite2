@@ -1,4 +1,5 @@
-.content_page {
-   
+.content_about {
+    max-height: 100%; 
+    overflow: auto;
+    border-radius: 4rem;
 }
-
