@@ -1,6 +1,7 @@
 import React from 'react';
 import './info.css'
 
+
 function Info() {
 
   return (

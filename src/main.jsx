@@ -12,6 +12,7 @@ import Contact from './contacto/contact.jsx';
 
 import './index.css'
 import './reset.css'
+import './scroll.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -22,7 +23,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <aside className='layout_aside'>
           <Aside />
         </aside>
-
 
         <main className='layout_content'>
           <Routes>

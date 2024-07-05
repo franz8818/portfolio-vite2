@@ -1,5 +1,35 @@
-.content_about {
-    max-height: 100%; 
-    overflow: auto;
-    border-radius: 4rem;
+.content_about{
+    height: 100%; /* De la caja que contiene el layout}_content */
+    min-height: 100%; /* Altura minima fija*/
+
+    display: block;
+    overflow: auto; /* Scroll a dentro del content_about */
 }
+
+.about_header {
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.about_personal-info{
+    padding: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+.about_services{
+    padding: 4rem;
+}
+
+.services_header{
+    padding-bottom: 1.5rem;
+}
+
+.services_service{
+    padding-bottom: 3rem;
+}
+
+.service_description{
+    padding-top: 0.5rem;
+}
+
