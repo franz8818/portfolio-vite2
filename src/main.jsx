@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App.jsx'
 import Navbar from './navbar/navbar.jsx'
 import Aside from './aside/aside.jsx'
-import Info from './Sobre Mí/info.jsx'
+import Info from './Sobre mí/info.jsx'
 import Projects from './proyectos/projects.jsx'
 import Studys from './estudios/studys.jsx'
 import Contact from './contacto/contact.jsx';

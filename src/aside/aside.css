@@ -23,6 +23,7 @@
     min-width: 30rem;
 }
 
+/* ........................REVIZAR CIRCUNFERENCIA*/
 .user-info_container-image{
     position: relative;
     display: inline-block;
@@ -36,6 +37,8 @@
     /* overflow: hidden;  Logra que se queda la mascara del circulo */
 }
 
+
+/* ................................REVIZAR EFECTO DE PUNTOS */
 .user-info_container-image::after{
     /* Con ::after agrega un hijo al final de este contenedor */
     content: "";

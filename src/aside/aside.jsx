@@ -8,7 +8,7 @@ function Aside() {
       
       {/* Info de usuario */}
         <div className='user-info_general'>
-
+          
           <div className='user-info_container-image'>
             <img className='user-info_image' src='src/assets/img/1988.jpg' alt='User' />
           </div>
