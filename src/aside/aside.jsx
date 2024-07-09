@@ -48,17 +48,16 @@ function Aside() {
 
           </ul> 
         </div>
-
+        
           {/* Botón de CV */}
           <div className='user-info_buttons'>
             <a className='user-info_btn' href='#'>Descargar CV</a>
-          </div>
 
           {/* Footer */}
           <footer className='user-info_footer'>
             &copy; 2024 Made with React ♥︎
           </footer>
-
+          </div>
 
       </section>
 

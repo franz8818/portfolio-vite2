@@ -7,7 +7,7 @@
     /* Elmina los scrolls */
     overflow-y: hidden;
     /* Elmina los scrolls verticales */
-    background-color: var(--color-secundary);
+    background-color: var(--color-secondary);
 }
 
 .aside_user-info{
@@ -121,7 +121,7 @@
 
 .user-info_btn:hover{
     background-color: var(--color-primary);
-    color: var(--color-secundary);
+    color: var(--color-secondary);
 }
 
 .user-info_footer {

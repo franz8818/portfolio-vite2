@@ -31,7 +31,7 @@
 }
 
 .menu_option:hover .menu_icon{ /* Cuando hago Hover los .menu_icon cambian de color */
-    color: var(--color-secundary);
+    color: var(--color-secondary);
 }
 
 .menu_icon{
@@ -50,7 +50,7 @@
 
     color: var(--color-primary);
     opacity: 0;
-    background-color: var(--color-secundary);
+    background-color: var(--color-secondary);
     white-space: nowrap; /* Elimina el salto de linea */
 
     transition: all 400ms ease-in-out;

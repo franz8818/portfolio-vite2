@@ -25,15 +25,23 @@ function Info() {
           <div className='personal-info_data'>
             <ul className='personal-info_list'>
               <li className='personal-info_option'>
-                <span className='personal-info_title'>Ubicación</span>
+                <span className='personal-info_title'>Ubicación:</span>
                 <span className='personal-info_value'>Medellin, Colombia</span>
               </li>
-              <li>
-                <span className='personal-info_title'>Correo electronico</span>
+              <li className='personal-info_option'>
+                <span className='personal-info_title'>correo:</span>
                 <span className='personal-info_value'>franz8818@gmail.com</span>
               </li>
-              <li>
-                <span className='personal-info_title'>Teléfono</span>
+              <li className='personal-info_option'>
+                <span className='personal-info_title'>Teléfono:</span>
+                <span className='personal-info_value'>+57 316 270 2385 </span>
+              </li>
+              <li className='personal-info_option'>
+                <span className='personal-info_title'>Teléfono:</span>
+                <span className='personal-info_value'>+57 316 270 2385 </span>
+              </li>
+              <li className='personal-info_option'>
+                <span className='personal-info_title'>Teléfono:</span>
                 <span className='personal-info_value'>+57 316 270 2385 </span>
               </li>
             </ul>

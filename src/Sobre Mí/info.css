@@ -1,9 +1,12 @@
-.content_about{
-    height: 100%; /* De la caja que contiene el layout}_content */
-    min-height: 100%; /* Altura minima fija */
+.content_about {
+    height: 100%;
+    /* De la caja que contiene el layout}_content */
+    min-height: 100%;
+    /* Altura minima fija */
 
     display: block;
-    overflow: auto; /* Scroll a dentro del content_about */
+    overflow: auto;
+    /* Scroll a dentro del content_about */
 }
 
 .about_header {
@@ -11,54 +14,98 @@
     padding-bottom: 0;
 }
 
-.about_personal-info{
+.about_personal-info {
     padding: 4rem;
     padding-top: 2rem;
     padding-bottom: 0;
 }
 
-.about_services{
+.about_services {
     padding: 4rem;
 }
 
-.services_header{
+.services_header {
     padding-bottom: 1.5rem;
 }
 
-.services_service{
+.services_service {
     padding-bottom: 3rem;
 }
 
-.service_description{
+.service_description {
     padding-top: 0.5rem;
 }
 
-.about_header{
-    display: inline-block; /* Elemento funciona en linea pero como un bloque - El tamaño se adecua al contenido que tiene */
+.about_header {
+    display: inline-block;
+    /* Elemento funciona en linea pero como un bloque - El tamaño se adecua al contenido que tiene */
     top: 20px;
 }
 
-.about_title{
+.about_title {
     font-size: 3.2rem;
-    position: relative; /* Funciona en conjunto con "inline-block. */
+    position: relative;
+    /* Funciona en conjunto con "inline-block. */
 }
 
-.about_title::after{
+.about_title::after {
     content: "";
 
-    position: absolute; /* Gracias al "position" puedo mover los puntos a mi antojo */
+    position: absolute;
+    /* Gracias al "position" puedo mover los puntos a mi antojo */
     top: 20px;
     right: -25px;
 
     width: 50px;
     height: 30px;
-    
+
     background-size: 6px 6px;
     background-image: -webkit-repeating-radial-gradient(center center, var(--color-secundary), var(--color-secundary) 0.8px, transparent 0px, transparent 100%);
-                      /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
+    /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
 }
 
-.title_color{
-    color: var(--color-secundary);
+.title_color {
+    color: var(--color-secondary);
 }
 
+.about_personal-info {
+    display: flex;
+    /* Las cajas <section> y <div> se posicionan una al lado de la otra */
+    flex-direction: row;
+    /* Re afirma la distribución de los elementos en sentido fila */
+    width: 100%;
+}
+
+.personal-info_bio {
+    flex-basis: 55%;
+    /* Similar a utilizar un "width" */
+}
+
+.personal-info_description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.personal-info_data {
+    flex-basis: 40%;
+    /* Similar a utilizar un "width" */
+    padding: 0 1.5rem;
+    /* Separa de -personal-info_bio */
+}
+
+.personal-info_list {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding-top: 1rem;
+}
+
+.personal-info_option {
+    margin-bottom: 2rem;
+}
+
+.personal-info_title {
+    margin-right: 0.6rem;
+    /* Funciona como un espacio en "_title" y "value" */
+    color: var(--color-secondary);
+    font-weight: 600;
+}
