@@ -7,7 +7,7 @@
 .content_page{
     scrollbar-width: thin; /* Modifica ese elemento nativo del navegador */
     scrollbar-color: var(--color-scrollbar) transparent;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Desactiva el scroll horizontal */
 }
 
 /* Scroll CHROME .content_page */

@@ -51,7 +51,7 @@ function Info() {
 
         <section className='about_services'>
           <header className='services_header'>
-            <h3 className='services'>
+            <h3 className='services_title'>
               Lo que <span className="title_color">hago</span>
             </h3>
           </header>
