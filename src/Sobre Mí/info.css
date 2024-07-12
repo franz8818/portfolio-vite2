@@ -43,7 +43,7 @@
 }
 
 .about_title {
-    font-size: 3.2rem;
+    font-size: 3rem;
     position: relative;
     /* Funciona en conjunto con "inline-block. */
 }
@@ -57,11 +57,12 @@
     top: 20px;
     right: -25px;
 
-    width: 50px;
+    width: 45px;
     height: 30px;
 
+    opacity: 0.5;
     background-size: 6px 6px;
-    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secundary), var(--color-secundary) 0.8px, transparent 0px, transparent 100%);
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 0.8px, transparent 0px, transparent 100%);
     /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
 }
 
@@ -112,8 +113,64 @@
 }
 
 /* SERVICIOS */
+.about_services{
+    width: 100%;
+}
+
 .services_header {
     display: inline-block;
-    padding-right: 1.2rem;
+    /* Sombra con degradado de puntos */
     position: relative;
+    padding-bottom: 3rem;
+    /* 30 pixeles aprox de tamaño de escritorio de separación*/
+
+    font-size: 2.1rem;
+    /* 21 pixeles aprox */
+}
+
+.services_title::after {
+    content: "";
+
+    position: absolute;
+    /* Gracias al "position" puedo mover los puntos a mi antojo */
+    top: 20px;
+    right: -12px;
+
+    width: 40px;
+    height: 25px;
+
+    opacity: 0.5;
+    background-size: 6px 6px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 0.8px, transparent 0px, transparent 100%);
+    /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
+}
+
+.service_container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Distribuye en varias filas */
+}
+.services_service{
+    flex-basis: calc(46% - 4rem);
+    /* Elementos se colocan uno al lado del otro - con clalc resta los 4rems de "margin-right" */
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+}
+.service_real-icon {
+    /* Selector compuesto, acedemos al elemento -> fa-solid */
+    color: var(--color-secondary);
+    font-size: 3.8rem;
+}
+
+.service-title{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.service_description{
+    font-size: 1.6rem;
+    text-align: justify;
+    /* Texto "alineado" */
 }
