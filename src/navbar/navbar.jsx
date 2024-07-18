@@ -1,54 +1,44 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './navbar.css'
+import { NavLink } from 'react-router-dom';
+import './navbar.css';
 
 function Navbar() {
+  const getLinkClassName = ({ isActive }) => isActive ? "menu_link menu_link--active" : "menu_link";
 
   return (
-    <>
-      {/* Manú de navegación */}
-
-        <ul className='menu_list'>
-
-          <li className='menu_option'>
-            <Link className="menu_link" to='/'>
-              <i className='menu_icon fa-solid fa-house'></i>
-              <span className='menu_overlay'>Home</span> {/* Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea. */}
-            </Link>
-          </li>
-
-          <li className='menu_option'>
-            <Link className="menu_link" to='/info'> {/* Para navegar entre componente y componente utilizamos React Router y las etiqueta <link> y el to="" */}
-              <i className='menu_icon fa-solid fa-user'></i>
-              <span className='menu_overlay'>Sobre mí</span>
-            </Link>
-          </li>
-
-          <li className='menu_option'>
-            <Link className="menu_link" to='/projects'>
-              <i className='menu_icon fa-solid fa-briefcase'></i>
-              <span className='menu_overlay'>Proyectos</span>
-            </Link>
-          </li>
-
-          <li className='menu_option'>
-            <Link className="menu_link" to='/studys'>
-              <i className='menu_icon fa-solid fa-graduation-cap'></i>
-              <span className='menu_overlay'>Estudios</span>
-            </Link>
-          </li>
-
-          <li className='menu_option'>
-            <Link className="menu_link" to='/contact'>
-              <i className="menu_icon fa-solid fa-envelope"></i>
-              <span className='menu_overlay'>Contacto</span>
-            </Link>
-          </li>
-
-        </ul>
-        
-    </>
-  )
+    <ul className='menu_list'>
+      <li className='menu_option'>
+        <NavLink exact className={getLinkClassName} to='/'>
+          <i className='menu_icon fa-solid fa-house'></i>
+          <span className='menu_overlay'>Home</span>
+        </NavLink>
+      </li>
+      <li className='menu_option'>
+        <NavLink className={getLinkClassName} to='/info'>
+          <i className='menu_icon fa-solid fa-user'></i>
+          <span className='menu_overlay'>Sobre mí</span>
+        </NavLink>
+      </li>
+      <li className='menu_option'>
+        <NavLink className={getLinkClassName} to='/projects'>
+          <i className='menu_icon fa-solid fa-briefcase'></i>
+          <span className='menu_overlay'>Proyectos</span>
+        </NavLink>
+      </li>
+      <li className='menu_option'>
+        <NavLink className={getLinkClassName} to='/studys'>
+          <i className='menu_icon fa-solid fa-graduation-cap'></i>
+          <span className='menu_overlay'>Estudios</span>
+        </NavLink>
+      </li>
+      <li className='menu_option'>
+        <NavLink className={getLinkClassName} to='/contact'>
+          <i className="menu_icon fa-solid fa-envelope"></i>
+          <span className='menu_overlay'>Contacto</span>
+        </NavLink>
+      </li>
+    </ul>
+  );
 }
 
-export default Navbar
+export default Navbar;

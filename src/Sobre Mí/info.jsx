@@ -122,6 +122,34 @@ function Info() {
 
         </section>
 
+        <section className='about_extra'>
+          <header className='extra_header'>
+            <h2 className='extra_title'>
+              Información <span className='title_color'>Extra</span>
+            </h2>
+          </header>
+
+          <div className='extra_container'>
+            <article className='extra_info'>
+              <i className='extra_icon fa-solid fa-heart'></i>
+              <h4 className='extra_subtitle'>Clientes contentos</h4>
+              <span className='extra_quantity'>375.000</span>
+            </article>
+
+            <article className='extra_info'>
+              <i className='extra_icon fa-solid fa-clock'></i>
+              <h4 className='extra_subtitle'>Horas de trabajo</h4>
+              <span className='extra_quantity'>800</span>
+            </article>
+
+            <article className='extra_info'>
+              <i className='extra_icon fa-solid fa-star'></i>
+              <h4 className='extra_subtitle'>Valoración</h4>
+              <span className='extra_quantity'>8</span>
+            </article>
+          </div>
+        </section>
+
       </section>
     </>
   )

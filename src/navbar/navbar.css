@@ -30,14 +30,14 @@
     text-align: center;
 }
 
-.menu_option:hover .menu_icon{ /* Cuando hago Hover los .menu_icon cambian de color */
-    color: var(--color-secondary);
-}
-
 .menu_icon{
     font-size: 2.6rem;
     color: var(--color-icons);
     transition: all 300ms ease-in-out; /* Aplica a los iconos */
+}
+.menu_option:hover .menu_icon,
+.menu_link--active .menu_icon { /* Cuando hago Hover los .menu_icon cambian de color */
+    color: var(--color-secondary);
 }
 
 .menu_overlay {

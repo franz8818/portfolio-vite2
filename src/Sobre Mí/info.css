@@ -1,3 +1,5 @@
+/* ..............SOBRE MI............. */
+
 .content_about {
     height: 100%;
     /* De la caja que contiene el layout}_content */
@@ -16,9 +18,12 @@
 
 .about_personal-info {
     padding: 4rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-bottom: 0;
 }
+
+
+/*..............LO QUE HAGO............. */
 
 .about_services {
     padding: 4rem;
@@ -112,9 +117,12 @@
     font-weight: 600;
 }
 
-/* SERVICIOS */
+
+/* ...........SERVICIOS............ */
+
 .about_services{
     width: 100%;
+    padding-bottom: 0;
 }
 
 .services_header {
@@ -173,4 +181,72 @@
     font-size: 1.6rem;
     text-align: justify;
     /* Texto "alineado" */
+}
+
+
+/* ...........INFORMACIÓN EXTRA............ */
+
+.about_extra{
+    padding: 4rem;
+    margin-right: 3rem;
+    padding-top: 2rem;
+}
+
+.extra_container{
+    width: 100%;
+    /* 100% del tamaño que tenga disponible */
+    margin-bottom: 1.5rem;
+    
+    display: flex; 
+    /* Permite ajustar la flex-direction */
+    flex-direction: row;
+    justify-content: space-between;
+    /* Permite que los elementos tengan un espacio entre si */
+    flex-wrap: wrap;
+    /* Es por si hay más elementos en la misma fila */
+
+}
+
+.extra_title{
+    padding-bottom: 1.5rem;
+}
+
+.extra_info{
+    flex-basis: 30%;
+
+    padding: 2.5rem 0.5rem;
+    /* Vertical - Horizontal */
+    
+    border: 2px solid var(--color-border);
+    text-align: center;
+    border-radius: 1rem;
+
+}
+
+.extra_info:hover{
+    box-shadow: 0 18px 24px 5px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.5rem);
+}
+
+.extra_icon{
+    font-size: 3.3rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.extra_subtitle{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.extra_quantity{
+    display: block;
+    /* Permite manipular el elemento facilmente */
+    font-size: 2.5rem;
+    color: var(--color-subtitle);
+
+    margin: 1.5rem 1rem;
+    margin-bottom: 0;
+    line-height: 5rem;
+    /* Altura de linea con respecto al resto de elementos del resto de la caja */
 }
