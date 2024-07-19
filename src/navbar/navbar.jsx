@@ -26,9 +26,9 @@ function Navbar() {
         </NavLink>
       </li>
       <li className='menu_option'>
-        <NavLink className={getLinkClassName} to='/studys'>
-          <i className='menu_icon fa-solid fa-graduation-cap'></i>
-          <span className='menu_overlay'>Estudios</span>
+        <NavLink className={getLinkClassName} to='/cv'>
+          <i className='menu_icon fa-solid fa-clipboard-check'></i>
+          <span className='menu_overlay'>CV on-line</span>
         </NavLink>
       </li>
       <li className='menu_option'>

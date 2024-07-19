@@ -7,7 +7,7 @@ import Navbar from './navbar/navbar.jsx'
 import Aside from './aside/aside.jsx'
 import Info from './Sobre mí/info.jsx'
 import Projects from './proyectos/projects.jsx'
-import Studys from './estudios/studys.jsx'
+import Cv from './estudios/cv.jsx'
 import Contact from './contacto/contact.jsx';
 
 import './index.css'
@@ -29,7 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="/" element={<App />} />
             <Route path="/info" element={<Info />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/studys" element={<Studys />} />
+            <Route path="/cv" element={<Cv />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
