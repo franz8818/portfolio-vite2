@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <ul className='menu_list'>
       <li className='menu_option'>
-        <NavLink exact className={getLinkClassName} to='/'>
+        <NavLink className={getLinkClassName} to='/'>
           <i className='menu_icon fa-solid fa-house'></i>
           <span className='menu_overlay'>Home</span>
         </NavLink>

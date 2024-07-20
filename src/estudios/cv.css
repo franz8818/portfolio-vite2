@@ -36,3 +36,8 @@
     background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 0.8px, transparent 0px, transparent 100%);
     /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
 }
+
+.resume_container{
+    padding: 4rem;
+    padding-top: 2rem;
+}

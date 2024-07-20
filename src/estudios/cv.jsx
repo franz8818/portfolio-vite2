@@ -23,14 +23,14 @@ function Cv() {
 
             <div className='resume_timelines'>
 
-              <articles className='timelines_item'>
+              <article className='timelines_item'>
 
                 <header className='timeline_header'>
                   <h4 className='timeline_year'>2023</h4>
                   <span className='timeline_company'>Luz inmobiliaria</span>
                 </header>
 
-                <di className="timeline_divider"></di>
+                <div className="timeline_divider"></div>
 
                 <div className='timeline_description'>
                   <h3 className='timeline_title'>Operador de drone</h3>
@@ -44,7 +44,7 @@ function Cv() {
                   <span className='timeline_company'>Luz inmobiliaria</span>
                 </header>
 
-                <di className="timeline_divider"></di>
+                <div className="timeline_divider"></div>
 
                 <div className='timeline_description'>
                   <h3 className='timeline_title'>Editor de vídeos</h3>
@@ -52,22 +52,23 @@ function Cv() {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
                   </p>
                 </div>
-                
+
                 <header className='timeline_header'>
                   <h4 className='timeline_year'>2022</h4>
                   <span className='timeline_company'>Macht Bikes</span>
                 </header>
 
-                <di className="timeline_divider"></di>
+                <div className="timeline_divider"></div>
 
                 <div className='timeline_description'>
-                  <h3 className='timeline_title'>Editor de vídeos</h3>
+                  <h3 className='timeline_title'>Gerente</h3>
                   <p className='timeline_description'>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
                   </p>
                 </div>
 
-              </articles>
+              </article>
+
 
             </div>
 
@@ -78,15 +79,117 @@ function Cv() {
           </section>
 
           {/* Habilidades - Caja derecha */}
-          <section className='right'>
+          <section className='resume_right'>
 
             <header className='resume_subheader'>
               <h2 className='resume_subtitle'>Habilidades de diseño</h2>
             </header>
 
+            <div className='resume_skills'>
+
+              <article className='skills_title'>
+                <h4 className='skills_text'>Diseño web</h4>
+                <span className='skills_number'>90%</span>
+              </article>
+
+              <div className='skills_progressbar'>
+                <div className='skills_percentage'></div>
+              </div>
+
+              <article className='skills_title'>
+                <h4 className='skills_text'>Diseño mocups</h4>
+                <span className='skills_number'>50%</span>
+              </article>
+
+              <div className='skills_progressbar'>
+                <div className='skills_percentage'></div>
+              </div>
+
+              <article className='skills_title'>
+                <h4 className='skills_text'>Diseño logos</h4>
+                <span className='skills_number'>60%</span>
+              </article>
+
+              <div className='skills_progressbar'>
+                <div className='skills_percentage'></div>
+              </div>
+
+            </div>
+
             <header className='resume_subheader'>
               <h2 className='resume_subtitle'>Habilidades de código</h2>
             </header>
+
+            <div className='resume_skills'>
+
+              <article className='skills_title'>
+                <h4 className='skills_text'>HTML & CSS</h4>
+                <span className='skills_number'>90%</span>
+              </article>
+
+              <div className='skills_progressbar'>
+                <div className='skills_percentage'></div>
+              </div>
+
+              <article className='skills_title'>
+                <h4 className='skills_text'>JavaScrpit</h4>
+                <span className='skills_number'>80%</span>
+              </article>
+
+              <div className='skills_progressbar'>
+                <div className='skills_percentage'></div>
+              </div>
+
+              <article className='skills_title'>
+                <h4 className='skills_text'>React</h4>
+                <span className='skills_number'>60%</span>
+              </article>
+
+              <div className='skills_progressbar'>
+                <div className='skills_percentage'></div>
+              </div>
+
+            </div>
+
+            <header className='resume_subheader'>
+              <h2 className='resume_subtitle'>Conocimientos</h2>
+            </header>
+
+            <div className='resume_knowledges'>
+              <lu className='knowledges_list'>
+                <li className='knowledges_option'>Programación</li>
+                <li className='knowledges_option'>Desarrolo web</li>
+                <li className='knowledges_option'>Diseño web web</li>
+                <li className='knowledges_option'>Publicidad</li>
+                <li className='knowledges_option'>Edición de vídeos</li>
+              </lu>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <div className='resume_certificates'>
+
+          <header className='resume_subheader'>
+            <h2 className='resume_subtitle'>Certificados</h2>
+          </header>
+
+          <section className='certificates_container'>
+
+            <article className='certificates_certificate'>
+              <div className='certificate_logo'>
+                <img src='assets/img/certificado-1.png' className='certificates_image'></img>
+              </div>
+
+              <div className='certificates_content'>
+                <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
+                <span className='certificate_id'>ID: 823758</span>
+                <span className='certificate_date'>10 de Mayo 2024</span>
+
+              </div>
+            </article>
 
           </section>
 
