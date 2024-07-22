@@ -1,24 +1,3 @@
-.content_resume {
-    height: 100%;
-    /* De la caja que contiene el layout_content */
-    min-height: 100%;
-    /* Altura minima fija */
-
-    display: block;
-    overflow: auto;
-    /* Scroll a dentro del content_about */
-}
-
-.resume_header{
-    padding: 4rem;
-    padding-bottom: 0;
-}
-
-.resume_title{
-    font-size: 3rem;
-    position: relative;
-    /* Funciona en conjunto con "inline-block. */
-}
 
 .resume_title::after {
     content: "";
@@ -38,6 +17,11 @@
 }
 
 .resume_container{
+    padding: 4rem;
+    padding-top: 2rem;
+}
+
+.resume_certificates{
     padding: 4rem;
     padding-top: 2rem;
 }

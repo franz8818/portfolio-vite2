@@ -1,5 +1,6 @@
 import React from 'react';
 import './cv.css'
+import certificadoImg from '../assets/img/certificado-1.png';
 
 function Cv() {
 
@@ -156,13 +157,13 @@ function Cv() {
             </header>
 
             <div className='resume_knowledges'>
-              <lu className='knowledges_list'>
+              <ul className='knowledges_list'>
                 <li className='knowledges_option'>Programación</li>
                 <li className='knowledges_option'>Desarrolo web</li>
                 <li className='knowledges_option'>Diseño web web</li>
                 <li className='knowledges_option'>Publicidad</li>
                 <li className='knowledges_option'>Edición de vídeos</li>
-              </lu>
+              </ul>
 
             </div>
 
@@ -180,7 +181,7 @@ function Cv() {
 
             <article className='certificates_certificate'>
               <div className='certificate_logo'>
-                <img src='assets/img/certificado-1.png' className='certificates_image'></img>
+              <img src={certificadoImg} className='certificates_image' alt='Certificado' />
               </div>
 
               <div className='certificates_content'>

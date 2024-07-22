@@ -49,7 +49,9 @@ function Info() {
 
         </section>
 
+        {/* Lo que hago */}
         <section className='about_services'>
+
           <header className='services_header'>
             <h3 className='services_title'>
               Lo que <span className="title_color">hago</span>
@@ -122,6 +124,7 @@ function Info() {
 
         </section>
 
+        {/* Información extra */}
         <section className='about_extra'>
           <header className='extra_header'>
             <h2 className='extra_title'>

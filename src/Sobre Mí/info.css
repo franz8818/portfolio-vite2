@@ -1,78 +1,9 @@
 /* ..............SOBRE MI............. */
 
-.content_about {
-    height: 100%;
-    /* De la caja que contiene el layout_content */
-    min-height: 100%;
-    /* Altura minima fija */
-
-    display: block;
-    overflow: auto;
-    /* Scroll a dentro del content_about */
-}
-
-.about_header {
-    padding: 4rem;
-    padding-bottom: 0;
-}
-
 .about_personal-info {
     padding: 4rem;
     padding-top: 1.5rem;
     padding-bottom: 0;
-}
-
-
-/*..............LO QUE HAGO............. */
-
-.about_services {
-    padding: 4rem;
-}
-
-.services_header {
-    padding-bottom: 1.5rem;
-}
-
-.services_service {
-    padding-bottom: 3rem;
-}
-
-.service_description {
-    padding-top: 0.5rem;
-}
-
-.about_header {
-    display: inline-block;
-    /* Elemento funciona en linea pero como un bloque - El tamaño se adecua al contenido que tiene */
-    top: 20px;
-}
-
-.about_title {
-    font-size: 3rem;
-    position: relative;
-    /* Funciona en conjunto con "inline-block. */
-}
-
-.about_title::after,
-.services_title::after {
-    content: "";
-
-    position: absolute;
-    /* Gracias al "position" puedo mover los puntos a mi antojo */
-    top: 20px;
-    right: -25px;
-
-    width: 45px;
-    height: 30px;
-
-    opacity: 0.5;
-    background-size: 6px 6px;
-    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 0.8px, transparent 0px, transparent 100%);
-    /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
-}
-
-.title_color {
-    color: var(--color-secondary);
 }
 
 .about_personal-info {
@@ -118,7 +49,42 @@
 }
 
 
-/* ...........SERVICIOS............ */
+/*..............LO QUE HAGO............. */
+
+.about_services {
+    padding: 4rem;
+}
+
+.services_header {
+    padding-bottom: 1.5rem;
+}
+
+.services_service {
+    padding-bottom: 3rem;
+}
+
+.service_description {
+    padding-top: 0.5rem;
+}
+
+
+.about_title::after,
+.services_title::after {
+    content: "";
+
+    position: absolute;
+    /* Gracias al "position" puedo mover los puntos a mi antojo */
+    top: 20px;
+    right: -25px;
+
+    width: 45px;
+    height: 30px;
+
+    opacity: 0.5;
+    background-size: 6px 6px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 0.8px, transparent 0px, transparent 100%);
+    /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
+}
 
 .about_services{
     width: 100%;

@@ -7,7 +7,7 @@ import Navbar from './navbar/navbar.jsx'
 import Aside from './aside/aside.jsx'
 import Info from './Sobre mí/info.jsx'
 import Projects from './proyectos/projects.jsx'
-import Cv from './estudios/cv.jsx'
+import Cv from './curriculum/cv.jsx'
 import Contact from './contacto/contact.jsx';
 
 import './index.css'
