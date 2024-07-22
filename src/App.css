@@ -24,7 +24,7 @@
 
 /* ESTILOS GENERALES */
 
-.content_about, .content_resume {
+.content_about, .content_resume, .about_extra {
     height: 100%;
     /* De la caja que contiene el layout_content */
     min-height: 100%;
@@ -35,17 +35,15 @@
     /* Scroll a dentro del content_about */
 }
 
-.about_header, .resume_header {
+.about_header, .services_header, .extra_header, .resume_header  {
     padding: 4rem;
-    padding-top: 2rem;
-
     position: relative;
     display: inline-block;
     /* Elemento funciona en linea pero como un bloque - El tamaño se adecua al contenido que tiene */
     top: 20px;
 }
 
-.about_title, .resume_title {
+.about_title, .resume_title, .services_title, .extra_title {
     font-size: 3rem;
     position: relative;
     /* Funciona en conjunto con "inline-block. */
