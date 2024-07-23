@@ -1,5 +1,5 @@
 /* ..............SOBRE MI............. */
-.personal-info_container{
+.personal-info_container {
     display: flex;
     /* Las cajas <section> y <div> se posicionan una al lado de la otra */
     flex-direction: row;
@@ -9,38 +9,38 @@
     padding: 4rem;
     padding-top: 0;
     padding-bottom: 0;
-   
+
 }
 
-.personal-info_bio{
+.personal-info_bio {
     flex-basis: 55%;
     /* Similar a utilizar un "width" */
 }
 
-.personal-info_description{
+.personal-info_description {
     font-size: 1.6rem;
     line-height: 2.5rem;
 }
 
-.personal-info_data{
+.personal-info_data {
     flex-basis: 40%;
     /* Similar a utilizar un "width" */
     padding: 0 1rem;
     /* Separa de -personal-info_bio */
 }
 
-.personal-info_list{
+.personal-info_list {
     font-size: 1.6rem;
     line-height: 2.5rem;
     padding-top: 1rem;
-    padding-left: 5rem;
+    padding-left: 2.5rem;
 }
 
-.personal-info_option{
+.personal-info_option {
     margin-bottom: 2rem;
 }
 
-.personal-info_title{
+.personal-info_title {
     margin-right: 0.6rem;
     /* Funciona como un espacio en "_title" y "value" */
     color: var(--color-secondary);
@@ -49,93 +49,58 @@
 
 
 /*..............LO QUE HAGO............. */
-
-
-.service_description{
-    padding-top: 0.5rem;
-}
-
-
-.about_title::after,
-.services_title::after{
-    content: "";
-
-    position: absolute;
-    /* Gracias al "position" puedo mover los puntos a mi antojo */
-    top: 20px;
-    right: -25px;
-
-    width: 45px;
-    height: 30px;
-
-    opacity: 0.5;
-    background-size: 6px 6px;
-    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 0.8px, transparent 0px, transparent 100%);
-    /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
-}
-
-.services_title::after{
-    content: "";
-
-    position: absolute;
-    /* Gracias al "position" puedo mover los puntos a mi antojo */
-    top: 20px;
-    right: -12px;
-
-    width: 40px;
-    height: 25px;
-
-    opacity: 0.5;
-    background-size: 6px 6px;
-    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 0.8px, transparent 0px, transparent 100%);
-    /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
-}
-
-.services_container{
+.services_container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
-    flex-wrap: wrap;
     /* Distribuye en varias filas */
-    
-    padding: 4rem;
+
+    padding: 4rem 2rem;
+    /* Padding horizontal */
     padding-top: 0;
     padding-bottom: 0;
+    margin-left: 1rem;
 }
 
-.services_service{
-    flex-basis: calc(50% - 5rem);
+.services_service {
+    flex-basis: calc(50% - 3rem);
     /* Elementos se colocan uno al lado del otro - con clalc resta los 4rems de "margin-right" */
-    
-    padding: 0.2rem;
-    margin-right: 3.6rem;
-    margin-bottom: 4rem;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Asegura que los elementos se distribuyan uniformemente */
+
+    padding: 1rem;
+    margin-bottom: 2.5rem;
 
     line-height: 2.5rem;
-
 }
+
 .service_real-icon {
     /* Selector compuesto, acedemos al elemento -> fa-solid */
     color: var(--color-secondary);
     font-size: 3.8rem;
 }
 
-.service-title{
+.service-title {
     font-size: 1.8rem;
     margin-top: 1.5rem;
 }
 
-.service_description{
+.service_description {
     font-size: 1.6rem;
     text-align: justify;
     /* Texto "alineado" */
+    max-width: 90%;
+    /* Ajusta el valor según tus necesidades */
+    padding-top: 0.5rem;
 }
 
-
 /* ...........INFORMACIÓN EXTRA............ */
-
-.extra_container{
-    display: flex; 
+.extra_container {
+    display: flex;
     /* Permite ajustar la flex-direction */
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,43 +109,41 @@
     /* 100% del tamaño que tenga disponible */
     justify-content: space-between;
     /* Permite que los elementos tengan un espacio entre si */
-    
+
     padding: 2rem 4rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-left: 2.5rem;
     
+
 }
 
-.extra_info{
+.extra_info {
     flex-basis: 30%;
 
     padding: 2rem 0.1rem;
     /* Vertical - Horizontal */
-    
+
     border: 2px solid var(--color-border);
     text-align: center;
     border-radius: 2rem;
 
 }
 
-.extra_info:hover{
+.extra_info:hover {
     box-shadow: 0 18px 24px 5px rgba(0, 0, 0, 0.15);
     transform: translateY(-0.5rem);
 }
 
-.extra_icon{
+.extra_icon {
     font-size: 3.3rem;
     color: var(--color-secondary);
     margin-bottom: 1rem;
 }
 
-.extra_subtitle{
+.extra_subtitle {
     font-size: 1.5rem;
     margin: 1rem;
 }
 
-.extra_quantity{
+.extra_quantity {
     display: block;
     /* Permite manipular el elemento facilmente */
     font-size: 2.5rem;

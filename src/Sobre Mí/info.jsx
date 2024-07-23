@@ -69,7 +69,7 @@ function Info() {
 
             <article className='services_service'>
 
-              <div className='service_icon'>
+              <div className='service_real-icon'>
                 <i className='service_real-icon fa-solid fa-code'></i>
               </div>
 
