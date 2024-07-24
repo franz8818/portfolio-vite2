@@ -10,7 +10,7 @@ function Cv() {
       <section className='content_page content_resume'>
 
         <header className='resume_header'>
-          <h2 className='resume_title'>Curriculum <span className="title_color">on-line</span></h2>
+          <h1 className='resume_title'>Curriculum <span className="title_color">on-line</span></h1>
         </header>
 
         <div className='resume_container'>
@@ -40,6 +40,10 @@ function Cv() {
                   </p>
                 </div>
 
+              </article>
+
+              <article className='timelines_item'>
+
                 <header className='timeline_header'>
                   <h4 className='timeline_year'>2023</h4>
                   <span className='timeline_company'>Luz inmobiliaria</span>
@@ -53,6 +57,10 @@ function Cv() {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
                   </p>
                 </div>
+
+              </article>
+
+              <article className='timelines_item'>
 
                 <header className='timeline_header'>
                   <h4 className='timeline_year'>2022</h4>
@@ -70,7 +78,6 @@ function Cv() {
 
               </article>
 
-
             </div>
 
             <header className='resume_subheader'>
@@ -83,7 +90,7 @@ function Cv() {
           <section className='resume_right'>
 
             <header className='resume_subheader'>
-              <h2 className='resume_subtitle'>Habilidades de diseño</h2>
+              <h2 className='resume_subtitle'>Habilidades de <span className="subtitle_color">diseño</span></h2>
             </header>
 
             <div className='resume_skills'>
@@ -118,7 +125,7 @@ function Cv() {
             </div>
 
             <header className='resume_subheader'>
-              <h2 className='resume_subtitle'>Habilidades de código</h2>
+              <h2 className='resume_subtitle'>Habilidades de <span className="subtitle_color">código</span></h2>
             </header>
 
             <div className='resume_skills'>
@@ -181,7 +188,7 @@ function Cv() {
 
             <article className='certificates_certificate'>
               <div className='certificate_logo'>
-              <img src={certificadoImg} className='certificates_image' alt='Certificado' />
+                <img src={certificadoImg} className='certificates_image' alt='Certificado' />
               </div>
 
               <div className='certificates_content'>
