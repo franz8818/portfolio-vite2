@@ -24,7 +24,7 @@ function Cv() {
 
             <div className='resume_timelines'>
 
-              <article className='timelines_item'>
+              <article className='timelines_timeline'>
 
                 <header className='timeline_header'>
                   <h4 className='timeline_year'>2023</h4>
@@ -35,14 +35,14 @@ function Cv() {
 
                 <div className='timeline_description'>
                   <h3 className='timeline_title'>Operador de drone</h3>
-                  <p className='timeline_description'>
+                  <p className='timeline_text'>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
                   </p>
                 </div>
 
               </article>
 
-              <article className='timelines_item'>
+              <article className='timelines_timeline'>
 
                 <header className='timeline_header'>
                   <h4 className='timeline_year'>2023</h4>
@@ -53,14 +53,14 @@ function Cv() {
 
                 <div className='timeline_description'>
                   <h3 className='timeline_title'>Editor de vídeos</h3>
-                  <p className='timeline_description'>
+                  <p className='timeline_text'>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
                   </p>
                 </div>
 
               </article>
 
-              <article className='timelines_item'>
+              <article className='timelines_timeline'>
 
                 <header className='timeline_header'>
                   <h4 className='timeline_year'>2022</h4>
@@ -71,7 +71,7 @@ function Cv() {
 
                 <div className='timeline_description'>
                   <h3 className='timeline_title'>Gerente</h3>
-                  <p className='timeline_description'>
+                  <p className='timeline_text'>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
                   </p>
                 </div>
