@@ -168,6 +168,7 @@ function Cv() {
                 <li className='knowledges_option'>Programación</li>
                 <li className='knowledges_option'>Desarrolo web</li>
                 <li className='knowledges_option'>Diseño web web</li>
+                <li className='knowledges_option'>Landing Page</li>
                 <li className='knowledges_option'>Publicidad</li>
                 <li className='knowledges_option'>Edición de vídeos</li>
               </ul>
