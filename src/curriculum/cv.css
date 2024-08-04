@@ -1,3 +1,5 @@
+/* CAJA IZQUIERDA */
+
 .resume_title::after {
     content: "";
 
@@ -35,23 +37,23 @@
 }
 
 .resume_left {
-    flex-basis: 50%;
+    flex-basis: 70%;
     margin-right: 1.5rem;
 }
 
 .resume_subtitle {
-    margin-bottom: 1.8rem;
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
     font-size: 2.3rem;
     position: relative;
     /* Funciona en conjunto con "inline-block. */
 }
 
-.resume_timelines{
+.resume_timelines {
     margin-bottom: 5rem;
 }
 
-.timelines_timeline{
+.timelines_timeline {
     position: relative;
     width: 100%;
     margin-bottom: 1.5rem;
@@ -61,69 +63,68 @@
     flex-direction: row;
 }
 
-.timeline_header{
+.timeline_header {
     flex-basis: 30%;
     /* Separa un article del otro article */
     text-align: right;
-     /* Coloca el texto de derecha a izquierda */
-    padding-right: 2.5rem; 
-     /* Genera un paddin a la derecha para terminar de separarlos */
+    /* Coloca el texto de derecha a izquierda */
+    padding-right: 2.5rem;
+    /* Genera un paddin a la derecha para terminar de separarlos */
 }
 
-.timeline_year{
-    margin: 5px 0;
+.timeline_year {
+    margin: 3px 0;
     line-height: 1.9rem;
     font-size: 1.4rem;
 }
 
-.timeline_company{
+.timeline_company {
     display: block;
     font-size: 1.4rem;
     font-weight: lighter;
     color: var(--color-company);
 }
 
-.timeline_description{
+.timeline_description {
     width: 70%;
     /* El % restante de los 30 de flex-basis */
-    
     padding-right: 1.5rem;
-    
     color: var(--color-company);
 }
 
-.timeline_title{
-    font-size: 1.6rem;
-    margin-bottom: 0.3rem;
+.timeline_title {
+     font-size: 1.6rem;
 }
 
-.timeline_text{
+.timeline_text {
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
-.timeline_divider{
+.timeline_divider {
     position: absolute;
     /* Esto me permite modificar y mover los elementos */
     top: 0;
-    /* Con esto empieza en el punto 0 del div */
+    /* Con esto empieza en el punto 0 del div -> es decir que se estienda desde arriba hasta el pixel 18 */
     left: 30%;
-    bottom: -20%;
-    /* Esto permite que las lineas se junten */
+    bottom: -18%;
+    /* Esto permite que las lineas se junten y establezcan un largo de la línea */
 
     width: 1.5px;
+    height: auto;
     background-color: var(--color-icons);
     /* Con estos dos estilos ya crea una linea divisora */
 }
 
-.timeline_divider::before{
+.timeline_divider::before {
     /* Punto a fuera */
     content: "";
     /* Necesario para crear el pseudo-elemento. Sin esto no se mostrará */
     position: absolute;
-
-    top: 50%; /* Posiciona el punto a la mitad del contenedor */
-    margin-top: -55px; /* Ajusta la posición vertical del punto */
+    top: 50%;
+    /* Posiciona el punto a la mitad del contenedor */
+    margin-top: -55px;
+    /* Ajusta la posición vertical del punto */
     left: 50%;
     transform: translateX(-50%);
     /* Estos dos estilos centran el pseudo-elemento horizontalmente */
@@ -136,14 +137,15 @@
     background-color: var(--color-secondary);
 }
 
-.timeline_divider::after{
+.timeline_divider::after {
     /* Punto del centro*/
     content: "";
     /* Necesario para crear el pseudo-elemento. Sin esto no se mostrará */
     position: absolute;
-
-    top: 50%; /* Posiciona el punto a la mitad del contenedor */
-    margin-top: -51.5px; /* Ajusta la posición vertical del punto */
+    top: 50%;
+    /* Posiciona el punto a la mitad del contenedor */
+    margin-top: -51.5px;
+    /* Ajusta la posición vertical del punto */
     left: 50%;
     transform: translateX(-50%);
     /* Estos dos estilos centran el pseudo-elemento horizontalmente */
@@ -156,6 +158,54 @@
     opacity: 1;
     background-color: var(--color-primary);
 }
+
+/* CAJA DERECHA */
+
 .resume_right {
-    flex-basis: 45%;
+    flex-basis: 60%;
+    padding: 0 3rem;
+    padding-right: 8rem;
+    /* Achica las barras de %*/
+
+}
+
+.resume_skills{
+ width: 100%;
+ margin-bottom: 3rem;   
+}
+
+.skills_title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills_text{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.skills_number{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-subtitle);
+}
+
+.skills_progressbar{
+    width: 100%;
+    height: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.skills_percentage{
+    width: 40%;
+    height: 0.8rem;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
 }

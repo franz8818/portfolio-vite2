@@ -166,6 +166,7 @@ function Cv() {
             <div className='resume_knowledges'>
               <ul className='knowledges_list'>
                 <li className='knowledges_option'>Programación</li>
+                <li>HTML <br/> <progress style={{ width: '230px', height: '20px' }} min="0" value="90" max="100"> </progress> </li>
                 <li className='knowledges_option'>Desarrolo web</li>
                 <li className='knowledges_option'>Diseño web web</li>
                 <li className='knowledges_option'>Landing Page</li>
