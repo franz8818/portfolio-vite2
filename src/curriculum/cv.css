@@ -164,8 +164,8 @@
 .resume_right {
     flex-basis: 60%;
     padding: 0 3rem;
-    padding-right: 8rem;
-    /* Achica las barras de %*/
+    padding-right: 10rem;
+    /* Achica las barras de % */
 
 }
 
@@ -196,9 +196,14 @@
 .skills_progressbar{
     width: 100%;
     height: 1rem;
-    border: 1px solid var(--color-secondary);
+    display: inline-block;
+    /* Genera un espaciado, espacio en blanco por defecto */
+
+
     border-radius: 1rem;
+    border: 1px solid var(--color-secondary);
     background-color: var(--color-primary);
+
     margin-bottom: 1rem;
 }
 
@@ -209,3 +214,17 @@
     border: 1px solid var(--color-primary);
     border-radius: 1rem;
 }
+
+/* PORCENTAJE DE BARRAS */
+.skills_percentage-p1{width: 90%;}
+.skills_percentage-p2{width: 50%;}
+.skills_percentage-p3{width: 60%;}
+
+/* PORCENTAJE DE BARRAS */
+.skills_percentage-p4{width: 90%;}
+.skills_percentage-p5{width: 80%;}
+.skills_percentage-p6{width: 60%;}
+
+
+
+

@@ -101,7 +101,7 @@ function Cv() {
               </article>
 
               <div className='skills_progressbar'>
-                <div className='skills_percentage'></div>
+                <div className='skills_percentage skills_percentage-p1'></div>
               </div>
 
               <article className='skills_title'>
@@ -110,7 +110,7 @@ function Cv() {
               </article>
 
               <div className='skills_progressbar'>
-                <div className='skills_percentage'></div>
+                <div className='skills_percentage skills_percentage-p2'></div>
               </div>
 
               <article className='skills_title'>
@@ -119,7 +119,7 @@ function Cv() {
               </article>
 
               <div className='skills_progressbar'>
-                <div className='skills_percentage'></div>
+                <div className='skills_percentage skills_percentage-p3'></div>
               </div>
 
             </div>
@@ -136,7 +136,7 @@ function Cv() {
               </article>
 
               <div className='skills_progressbar'>
-                <div className='skills_percentage'></div>
+                <div className='skills_percentage skills_percentage-p4'></div>
               </div>
 
               <article className='skills_title'>
@@ -145,7 +145,7 @@ function Cv() {
               </article>
 
               <div className='skills_progressbar'>
-                <div className='skills_percentage'></div>
+                <div className='skills_percentage skills_percentage-p5'></div>
               </div>
 
               <article className='skills_title'>
@@ -154,7 +154,7 @@ function Cv() {
               </article>
 
               <div className='skills_progressbar'>
-                <div className='skills_percentage'></div>
+                <div className='skills_percentage skills_percentage-p6'></div>
               </div>
 
             </div>
