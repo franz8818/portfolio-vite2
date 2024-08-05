@@ -232,15 +232,23 @@
 }
 
 .knowledges_option{
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
     margin: 0.3rem;
 
     font-size: 1.3rem;
     background-color: var(--color-secondary);
     border-radius: 0.3rem;
     color: var(--color-primary);
-
 }
 
+.certificates_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
 
-
+.certificates_certificate{
+    flex-basis: calc(45%-5rem);
+    border: 2px solid var(--color-border);
+}

@@ -196,9 +196,46 @@ function Cv() {
                 <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
                 <span className='certificate_id'>ID: 823758</span>
                 <span className='certificate_date'>10 de Mayo 2024</span>
-
               </div>
             </article>
+
+            <article className='certificates_certificate'>
+              <div className='certificate_logo'>
+                <img src={certificadoImg} className='certificates_image' alt='Certificado' />
+              </div>
+
+              <div className='certificates_content'>
+                <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
+                <span className='certificate_id'>ID: 823758</span>
+                <span className='certificate_date'>10 de Mayo 2024</span>
+              </div>
+            </article>
+
+            <article className='certificates_certificate'>
+              <div className='certificate_logo'>
+                <img src={certificadoImg} className='certificates_image' alt='Certificado' />
+              </div>
+
+              <div className='certificates_content'>
+                <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
+                <span className='certificate_id'>ID: 823758</span>
+                <span className='certificate_date'>10 de Mayo 2024</span>
+              </div>
+            </article>
+
+            <article className='certificates_certificate'>
+              <div className='certificate_logo'>
+                <img src={certificadoImg} className='certificates_image' alt='Certificado' />
+              </div>
+
+              <div className='certificates_content'>
+                <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
+                <span className='certificate_id'>ID: 823758</span>
+                <span className='certificate_date'>10 de Mayo 2024</span>
+              </div>
+            </article>
+
+
 
           </section>
 
