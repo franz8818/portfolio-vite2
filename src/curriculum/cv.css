@@ -1,5 +1,4 @@
 /* CAJA IZQUIERDA */
-
 .resume_title::after {
     content: "";
 
@@ -160,7 +159,6 @@
 }
 
 /* CAJA DERECHA */
-
 .resume_right {
     flex-basis: 60%;
     padding: 0 3rem;
@@ -225,6 +223,24 @@
 .skills_percentage-p5{width: 80%;}
 .skills_percentage-p6{width: 60%;}
 
+/* CONOCIMIENTOS */
+.knowledges_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Ayuda a no generar una fila enorme */
+}
+
+.knowledges_option{
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+
+    font-size: 1.3rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.3rem;
+    color: var(--color-primary);
+
+}
 
 
 
