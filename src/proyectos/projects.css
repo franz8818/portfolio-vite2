@@ -1,10 +1,11 @@
-.content_project{
-    min-height: 100%; /* Altura minima definida */
-    background-color: var(--color-primary);
-    border-radius: 0 10rem 10rem 0;
-    
-    display: flex; /* Activa la funcionalidad "flex" */
-    flex-direction: column; /* Uno debajo del otro */
-    align-items: center; /* Elementos verticalmente al centro */
-    justify-content: center; /* Elementos alineados al centro */
+.proyects_container {
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+}
+
+.portfolio_gallery{
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 2.5rem; 
 }
