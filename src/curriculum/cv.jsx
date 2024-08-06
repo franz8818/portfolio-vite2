@@ -84,6 +84,65 @@ function Cv() {
               <h2 className='resume_subtitle'>Estudios</h2>
             </header>
 
+            <div className='resume_timelines'>
+
+              <article className='timelines_timeline'>
+
+                <header className='timeline_header'>
+                  <h4 className='timeline_year'>2023</h4>
+                  <span className='timeline_company'>Luz inmobiliaria</span>
+                </header>
+
+                <div className="timeline_divider"></div>
+
+                <div className='timeline_description'>
+                  <h3 className='timeline_title'>Operador de drone</h3>
+                  <p className='timeline_text'>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
+                  </p>
+                </div>
+
+              </article>
+
+              <article className='timelines_timeline'>
+
+                <header className='timeline_header'>
+                  <h4 className='timeline_year'>2023</h4>
+                  <span className='timeline_company'>Luz inmobiliaria</span>
+                </header>
+
+                <div className="timeline_divider"></div>
+
+                <div className='timeline_description'>
+                  <h3 className='timeline_title'>Editor de vídeos</h3>
+                  <p className='timeline_text'>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
+                  </p>
+                </div>
+
+              </article>
+
+              <article className='timelines_timeline'>
+
+                <header className='timeline_header'>
+                  <h4 className='timeline_year'>2022</h4>
+                  <span className='timeline_company'>Macht Bikes</span>
+                </header>
+
+                <div className="timeline_divider"></div>
+
+                <div className='timeline_description'>
+                  <h3 className='timeline_title'>Gerente</h3>
+                  <p className='timeline_text'>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae.
+                  </p>
+                </div>
+
+              </article>
+
+            </div>
+
+
           </section>
 
           {/* Habilidades - Caja derecha */}
@@ -163,17 +222,17 @@ function Cv() {
               <h2 className='resume_subtitle'>Conocimientos</h2>
             </header>
 
-            <div className='resume_knowledges'>
+            <section className='resume_knowledges'>
               <ul className='knowledges_list'>
                 <li className='knowledges_option'>Programación</li>
                 <li className='knowledges_option'>Desarrolo web</li>
-                <li className='knowledges_option'>Diseño web web</li>
+                <li className='knowledges_option'>Diseño web</li>
                 <li className='knowledges_option'>Landing Page</li>
                 <li className='knowledges_option'>Publicidad</li>
                 <li className='knowledges_option'>Edición de vídeos</li>
               </ul>
 
-            </div>
+            </section>
 
           </section>
 
