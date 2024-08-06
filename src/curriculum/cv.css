@@ -241,14 +241,65 @@
     color: var(--color-primary);
 }
 
+/* CERTIFICADOS */
 .certificates_container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 4rem;
+    justify-content: center; 
+    /* Centra horizontalmente */
+    padding: 4rem;
 }
 
 .certificates_certificate{
-    flex-basis: calc(45%-5rem);
+    flex-basis: calc(45% - 2rem);
     border: 2px solid var(--color-border);
+    border-radius: 0.8rem;
+
+    display: flex;
+    /* Posiciona los elemtos de adentro */
+    flex-direction: row;
+}
+
+.certificate_logo{
+    width: 15rem;
+    height: 100%;
+    padding: 2.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    /* Se aplica a solo los bordes izquierdos superiores e inferiores */
+
+    background-color: var(--color-certificate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+    /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+.certificate_image{
+    width: 100%;
+}
+
+.certificates_content{
+    padding: 1rem 2rem;
+}
+
+.certificates_title{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.certificate_id{
+    display: block;
+    /* Para elementos en linea */
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--color-subtitle)
+}
+
+.certificate_date{
+    font-size: 1.2rem;
+    color: var(--color-subtitle)
 }
