@@ -5,12 +5,15 @@ function Projects() {
 
   return (
     <>
-      {/* Sobre Mí */}
-        <section className='content_project'>
-        <h1>
-          <div className='sobre_mi'>Proyectos</div>
-        </h1>
-        </section>
+      {/* Título Curriculum */}
+      <section className='content_page content_proyects'>
+
+        <header className='proyects_header'>
+          <h1 className='proyects_title'>Proyectos </h1>
+        </header>
+
+      </section>
+
     </>
   )
 }

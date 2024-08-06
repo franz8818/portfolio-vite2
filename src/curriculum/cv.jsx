@@ -218,6 +218,7 @@ function Cv() {
 
             </div>
 
+            {/* Conocimientos - Caja derecha*/}
             <header className='resume_subheader'>
               <h2 className='resume_subtitle'>Conocimientos</h2>
             </header>
@@ -238,6 +239,7 @@ function Cv() {
 
         </div>
 
+        {/* Certificados - Caja derecha*/}
         <div className='resume_certificates'>
 
           <header className='resume_subheader'>
@@ -293,8 +295,6 @@ function Cv() {
                 <span className='certificate_date'>10 de Mayo 2024</span>
               </div>
             </article>
-
-
 
           </section>
 

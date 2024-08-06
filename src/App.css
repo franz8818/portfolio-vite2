@@ -22,7 +22,9 @@
 }
 
 /* ESTILOS GENERALES */
-.content_about, .content_resume {
+
+/* CONTENT */
+.content_about, .content_resume, .content_proyects {
     height: 100%;
     /* De la caja que contiene el layout_content */
     min-height: 100%;
@@ -33,7 +35,8 @@
     /* Scroll a dentro del content_about */
 }
 
-.about_header, .services_header, .extra_header, .resume_header  {
+/* HEADER */
+.about_header, .services_header, .extra_header, .resume_header, .proyects_header {
     padding: 4rem;
     position: relative;
     display: inline-block;
@@ -41,7 +44,8 @@
     top: 20px;
 }
 
-.about_title, .services_title, .extra_title, .resume_title {
+/* TITLE */
+.about_title, .services_title, .extra_title, .resume_title, .proyects_title {
     font-size: 3rem;
     position: relative;
     /* Funciona en conjunto con "inline-block. */
@@ -51,10 +55,11 @@
     color: var(--color-secondary);
 }
 
+/* EFECTOS TITLE */
 .about_title::after,
 .services_title::after, 
 .extra_title::after,
-.resume_header::after{
+.proyects_title::after{
     content: "";
 
     position: absolute;
