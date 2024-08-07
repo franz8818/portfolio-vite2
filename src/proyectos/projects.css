@@ -9,3 +9,118 @@
     padding-top: 0;
     padding-bottom: 2.5rem; 
 }
+
+/* NAVBAR - PROYECTOS */
+
+.portfolio_navbar{
+    margin-bottom: 0.5rem;
+    /* 3rem equivale a 30 pixeles */
+    margin-top: 1rem;
+}
+
+.portfolio_menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Si hay muchos elementos, salte a la siguiente linea */
+    gap: 1.5rem;
+    /* Funciona similar a a un "margin-right" */
+}
+
+.portfolio_option{
+    font-size: 1.4rem;
+    opacity: 0.7;
+}
+
+.portfolio_option--active{
+/* --active -> Es un modificador que se agrego al componente HTML */
+opacity: 1;
+font-weight: bold;
+}
+
+.portfolio_link{
+    cursor: pointer;
+    /* Al pasar el cursor, se transforma en el dedo de link */
+}
+
+.portfolio_link:hover{
+    color: var(--color-secondary);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+    /* Crea un fonde negro muy sutil */
+}
+
+.portfolio_gallery{
+    display: flex;
+    flex-direction: row;
+    /* Lo pongo por si se me antoja trnaformarlo en columna */
+    flex-wrap: wrap;
+}
+
+.gallery_item{
+    flex-basis: 30%;
+    padding: 0.7rem;
+    position: relative;
+    /* Permite que los iconos de "gallery_icon" se coloquen arriba del cuadro de la imagen */
+}
+
+.gallery_container_image{
+    overflow: hidden;
+    /* Esto respeta el cuadro que contiene la imagen */
+}
+
+.gallery_image{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery_item:hover .gallery_image{
+/* Guando le haga hover a la imagen esta va a cambiar -> Genera un pequeño zoom */
+    transform: scale(1.1);
+}
+
+.gallery_title{
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+    font-weight: bold;
+}
+
+.gallery_icon{
+    opacity: 0;
+    /* Desaparece los elementos por defecto */
+    position: absolute;
+    top: 1.5rem;
+    /* Recordar que si no tuviera el "position:relative" en el layout principal, los elemento estarian en el "top" del navegador. */
+    right: 1.5rem;
+
+    width: 2rem;
+    height: 2rem;
+
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2rem;
+    /* Ayuda a colocar el elemento en el medio */
+
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transition: all 450ms ease-in-out;
+}
+
+.gallery_category{
+    opacity: 0;
+    /* Desaparece los elementos por defecto */
+    position: absolute;
+    /* Me permite mover el elemento a mi antojo */
+    top: 1.5rem;
+    left: 1.5rem;
+
+    padding: 0.2rem 0.7rem;
+    font-size: 1.1rem;
+
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    transition: all 450ms ease-in-out;
+}
+
+.gallery_item:hover .gallery_icon,
+.gallery_item:hover .gallery_category {
+    opacity: 1;
+    }

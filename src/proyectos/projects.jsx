@@ -16,7 +16,7 @@ function Projects() {
 
           <nav className='portfolio_navbar'>
             <ul className='portfolio_menu'>
-              <li className='portfolio_option'>
+              <li className='portfolio_option portfolio_option--active'>
                 <a href='#' className='portfolio_link'>Todo</a>
               </li>
               <li className='portfolio_option'>
