@@ -24,7 +24,7 @@
 /* ESTILOS GENERALES */
 
 /* CONTENT */
-.content_about, .content_resume, .content_proyects {
+.content_about, .content_resume, .content_proyects, .content_contact {
     height: 100%;
     /* De la caja que contiene el layout_content */
     min-height: 100%;
@@ -36,7 +36,7 @@
 }
 
 /* HEADER */
-.about_header, .services_header, .extra_header, .resume_header, .proyects_header {
+.about_header, .services_header, .extra_header, .resume_header, .proyects_header, .contact_header {
     padding: 4rem;
     position: relative;
     display: inline-block;
@@ -45,7 +45,7 @@
 }
 
 /* TITLE */
-.about_title, .services_title, .extra_title, .resume_title, .proyects_title {
+.about_title, .services_title, .extra_title, .resume_title, .proyects_title, .contact_title {
     font-size: 3rem;
     position: relative;
     /* Funciona en conjunto con "inline-block. */
@@ -59,7 +59,8 @@
 .about_title::after,
 .services_title::after, 
 .extra_title::after,
-.proyects_title::after{
+.proyects_title::after,
+.contact_title::after{
     content: "";
 
     position: absolute;
