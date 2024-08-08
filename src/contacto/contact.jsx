@@ -41,7 +41,7 @@ function Contact() {
           <section className='contact_form-box'>
 
             <div className='contact_map'></div>
-            
+
             <header className='contact_form-header'>
               <h3 className='contact_subtitle'>¡Trabajemos <span className='subtitle_color'>juntos!</span> </h3>
             </header>
@@ -50,36 +50,40 @@ function Contact() {
 
             <div className='form_container'>
 
-              <div className='form_left'>
+              <section className='form_left'>
 
                 <div className='form_group'>
                   <input type='text' className='form_input' name='name' required placeholder='Nombre'></input>
                   <label for="name" className='form_label'>Nombre</label>
                 </div>
-              </div>
 
-              <div className='form_group'>
-                <input type='text' className='form_input' name='e-mail' required placeholder='e-mail'></input>
-                <label for="name" className='form_label'>Nombre</label>
-              </div>
+                <div className='form_group'>
+                  <input type='e-mail' className='form_input' name='e-mail' required placeholder='email'></input>
+                  <label for="email" className='form_label'>e-mail</label>
+                </div>
+
+                <div className='form_group'>
+                  <input type='text' className='form_input' name='asunto' required placeholder='Asunto'></input>
+                  <label for="subject" className='form_label'>Asunto</label>
+                </div>
+
+              </section>
 
             </div>
 
-            <div className='form_group'>
-              <input type='text' className='form_input' name='asunto' required placeholder='asunto'></input>
-              <label for="name" className='form_label'>Nombre</label>
-            </div>
 
           </section >
 
+          <div className='form_right'>
+
+            <div className='form_group'>
+              <textarea className='form_input form_input--textarea' name='message' required placeholder='Mensaje'></textarea>
+              <label for="message" className='form_label'>Mensaje</label>
+            </div>
+
+          </div>
 
         </div>
-
-        <div className='form_right'></div>
-
-
-
-
 
       </section >
 
