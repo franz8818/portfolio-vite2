@@ -3,3 +3,27 @@
     padding-top: 0;
     padding-bottom: 2.5rem;
 }
+
+.contact_info{
+    padding: 0 1.5rem;
+}
+
+.contact_form-box{
+    padding: 0 1.5rem;
+}
+
+.contact_data{
+    width: 100%;
+    /* Ya esta por defecto, pero si en futuro lo podemos modificar */
+    margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-icons);
+}
+
+.contact_icon{
+    font-size: 3.3rem;
+    color: var(--color-secondary);
+}
+
