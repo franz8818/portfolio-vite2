@@ -27,3 +27,6 @@
     color: var(--color-secondary);
 }
 
+.form_button{
+    border-radius: 1rem;
+}
