@@ -2,14 +2,19 @@
     padding: 4rem;
     padding-top: 0;
     padding-bottom: 2.5rem;
+    display: flex;
+    /* Invierte las "divs" */
+    flex-direction: row-reverse; 
 }
 
 .contact_info{
-    padding: 0 1.5rem;
+    padding: 0 10rem;
+    padding-top: 1rem;
 }
 
 .contact_form-box{
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
+    font-size: 1.8rem;
 }
 
 .contact_data{
@@ -18,13 +23,18 @@
     margin-bottom: 1.5rem;
     padding: 2rem 1rem;
     text-align: center;
-    background-color: var(--color-background);
+    background-color: var(--color-contact);
     border: 1px solid var(--color-icons);
+    font-size: 1.3rem;
 }
 
 .contact_icon{
-    font-size: 3.3rem;
+    font-size: 2rem;
     color: var(--color-secondary);
+}
+
+.contact_subtitle{
+    font-size: 1.5rem;
 }
 
 .form_button{

@@ -21,14 +21,14 @@ function Contact() {
             </div>
 
             <header className='contact_form-header'>
-              <h3 className='contact_subtitle'>¡Trabajemos <span className='subtitle_color'>juntos!</span> </h3>
+              <h3 className='form-header_subtitle'>¡Trabajemos <span className='subtitle_color'>juntos!</span> </h3>
             </header>
 
             <form className='contact_form'>
 
               <div className='form_container'>
 
-                <section className='form_left'>
+                <section className='form_right'>
 
                   <div className='form_group'>
                     <input type='text' className='form_input' name='name' required placeholder='Nombre'></input>
@@ -49,7 +49,7 @@ function Contact() {
 
               </div>
 
-              <section className='form_right'>
+              <section className='form_left'>
 
                 <div className='form_group'>
                   <textarea className='form_input form_input--textarea' name='message' required placeholder='Mensaje'></textarea>
