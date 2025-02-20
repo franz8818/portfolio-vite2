@@ -20,9 +20,7 @@ function Contact() {
               {/* <iframe frameborder="0" marginheight="0" marignwidth="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9821968830474!2d-75.38184222470969!3d6.133094027576386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e469f28acb535cb%3A0x82ee7b7256893f20!2sCra.%2055b%2C%20Rionegro%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1723243348828!5m2!1ses!2sco"></iframe> */}
             </div>
 
-            <header className='contact_form-header'>
-              <h3 className='form-header_subtitle'>¡Trabajemos <span className='subtitle_color'>juntos!</span> </h3>
-            </header>
+
 
             <form className='contact_form'>
 
@@ -53,12 +51,16 @@ function Contact() {
 
                 <div className='form_group'>
                   <textarea className='form_input form_input--textarea' name='message' required placeholder='Mensaje'></textarea>
-                  <label for="message" className='form_label'>Mensaje</label>
+                  <label for="message" className='form_label'></label>
                 </div>
 
               </section>
 
               <input type='submit' className='form_button' value="Enviar Mensaje"></input>
+
+              {/* <div className='contact_form-header'>
+                <h3 className='form-header_subtitle'>¡Trabajemos <span className='subtitle_color'>juntos!</span> </h3>
+              </div> */}
 
             </form>
 

@@ -1,5 +1,5 @@
 .contact_container {
-    padding: 4rem;
+    padding: 6rem;
     padding-top: 0;
     padding-bottom: 2.5rem;
     display: flex;
@@ -8,20 +8,28 @@
 }
 
 .contact_info{
-    padding: 0 10rem;
-    padding-top: 1rem;
+    padding: 0 5rem;
+    padding-top: 2rem;
 }
 
 .contact_form-box{
-    padding: 0 2.5rem;
+    padding: 0 4.5rem;
     font-size: 1.8rem;
+}
+
+.contact_form-header{
+    padding-top: 2rem;
+}
+
+.form_container{
+    padding-top: 1.5rem;
 }
 
 .contact_data{
     width: 100%;
     /* Ya esta por defecto, pero si en futuro lo podemos modificar */
     margin-bottom: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 1.8rem 0.5rem;
     text-align: center;
     background-color: var(--color-contact);
     border: 1px solid var(--color-icons);
@@ -39,4 +47,32 @@
 
 .form_button{
     border-radius: 1rem;
+}
+
+.form_group{
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.form_input{
+    position: relative;
+    display: block;
+    border: 0.2rem solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    outline: none; 
+    /* No incluya de manera forzada unos borders */
+    box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.10);
+    background-color: transparent;
+     /* No incluya de manera forzada colores de fondo */
+}
+
+.form_input:focus{
+    border: 0.2rem solid var(--color-secondary)
+}
+
+.form_input--textarea{
+    display: block;
+    resize: none;
+     /* Bloquea el tamaño de la textarea */
 }

@@ -60,7 +60,7 @@
 .services_title::after, 
 .extra_title::after,
 .proyects_title::after,
-.contact_title::after{
+.contact_title::after {
     content: "";
 
     position: absolute;
@@ -77,7 +77,7 @@
     /* Caja de puntos con un gradiente radial "center" -> Para la simetria / Colores para dar forma, fondo y frente / Grosor y definicion de los puntos */
 }
 
-.resume_header::after{
+.resume_header::after {
     content: "";
 
     position: absolute;

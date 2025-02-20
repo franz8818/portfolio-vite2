@@ -65,7 +65,7 @@ function Aside() {
 
           {/* Footer */}
           <footer className='user-info_footer'>
-            &copy; 2024 Made with React ♥︎
+            &copy; Made with React ♥︎
           </footer>
         </div>
 
