@@ -51,7 +51,7 @@
 
 .form_group{
     position: relative;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .form_input{
@@ -65,14 +65,45 @@
     box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.10);
     background-color: transparent;
      /* No incluya de manera forzada colores de fondo */
+    line-height: 2.2rem;
 }
 
 .form_input:focus{
     border: 0.2rem solid var(--color-secondary)
 }
 
+.form_label{
+    position: absolute;
+    top: 0.7rem;
+    left: 0.9rem;
+    z-index: -1;
+    color: var(--color-company);
+    transition: all 300ms ease-in-out;
+    /* Ayuda que se posicione con una transición "suave" */
+}
+
+.form_input:focus~label{ /* Virgulilla seleciona -> Elemento Hermano -> input (Vinculado) */
+    top: 2rem;
+    left: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    color: var(--color-secondary);
+}
+
+.form_input::-webkit-input-placeholder{
+    color: transparent;
+    /* Con esto oculto los placeholder en Chrome */
+}
+
+.form_input::-moz-placeholder{
+    color: transparent;
+    /* Con esto oculto los placeholder en Firefox */
+}
+
 .form_input--textarea{
     display: block;
     resize: none;
      /* Bloquea el tamaño de la textarea */
+     height: 150px;
 }
+
