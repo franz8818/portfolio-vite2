@@ -219,7 +219,7 @@ function Cv() {
             </div>
 
             {/* Conocimientos - Caja derecha*/}
-            <header className='resume_subheader'>
+            {/* <header className='resume_subheader'>
               <h2 className='resume_subtitle'>Conocimientos</h2>
             </header>
 
@@ -233,7 +233,7 @@ function Cv() {
                 <li className='knowledges_option'>Edición de vídeos</li>
               </ul>
 
-            </section>
+            </section> */}
 
           </section>
 

@@ -83,7 +83,7 @@
 }
 
 .form_input:focus~label{ /* Virgulilla seleciona -> Elemento Hermano -> input (Vinculado) */
-    top: 2rem;
+    top: -2rem;
     left: 0;
     z-index: 1;
     font-size: 1.3rem;

@@ -23,7 +23,6 @@ function Info() {
             <article className='personal-info_bio'>
               <p className='personal-info_description'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ipsam, sed adipisci officia possimus quibusdam minus quaerat blanditiis? Ex laudantium, eligendi alias enim consectetur quae vitae odit beatae nesciunt quod?
-                Qui repellat ipsum expedita sapiente pariatur laborum voluptate dolore quas voluptates. Doloremque, vitae voluptatem earum, aliquid fuga iusto dolore suscipit maxime quaerat illo quibusdam quidem numquam, nisi deserunt incidunt voluptatibus.
               </p>
             </article>
 
@@ -36,14 +35,6 @@ function Info() {
                 <li className='personal-info_option'>
                   <span className='personal-info_title'>correo:</span>
                   <span className='personal-info_value'>franz8818@gmail.com</span>
-                </li>
-                <li className='personal-info_option'>
-                  <span className='personal-info_title'>Teléfono:</span>
-                  <span className='personal-info_value'>+57 316 270 2385 </span>
-                </li>
-                <li className='personal-info_option'>
-                  <span className='personal-info_title'>Teléfono:</span>
-                  <span className='personal-info_value'>+57 316 270 2385 </span>
                 </li>
                 <li className='personal-info_option'>
                   <span className='personal-info_title'>Teléfono:</span>
@@ -132,7 +123,7 @@ function Info() {
         </section>
 
         {/* Información extra */}
-        <section className='about_extra'>
+        {/* <section className='about_extra'>
           
           <header className='extra_header'>
             <h2 className='extra_title'>
@@ -159,7 +150,7 @@ function Info() {
               <span className='extra_quantity'>8</span>
             </article>
           </div>
-        </section>
+        </section> */}
 
       </section>
     </>
