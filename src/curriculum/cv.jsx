@@ -152,7 +152,7 @@ function Cv() {
               <h2 className='resume_subtitle'>Habilidades de <span className="subtitle_color">diseño</span></h2>
             </header>
 
-            <div className='resume_skills'>
+            {/* <div className='resume_skills'>
 
               <article className='skills_title'>
                 <h4 className='skills_text'>Diseño web</h4>
@@ -181,7 +181,7 @@ function Cv() {
                 <div className='skills_percentage skills_percentage-p3'></div>
               </div>
 
-            </div>
+            </div> */}
 
             <header className='resume_subheader'>
               <h2 className='resume_subtitle'>Habilidades de <span className="subtitle_color">código</span></h2>
