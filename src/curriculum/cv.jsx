@@ -145,14 +145,87 @@ function Cv() {
 
           </section>
 
-          {/* Habilidades - Caja derecha */}
-          <section className='resume_right'>
+
+          {/* Certificados - Caja derecha*/}
+          <div className='resume_right'>
 
             <header className='resume_subheader'>
-              <h2 className='resume_subtitle'>Habilidades de <span className="subtitle_color">diseño</span></h2>
+              <h2 className='resume_subtitle'>Certificados</h2>
             </header>
 
-            {/* <div className='resume_skills'>
+            <section className='certificates_container'>
+
+              <article className='certificates_certificate'>
+                <div className='certificate_logo'>
+                  <img src={certificadoImg} className='certificates_image' alt='Certificado' />
+                </div>
+
+                <div className='certificates_content'>
+                  <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
+                  <span className='certificate_id'>ID: 823758</span>
+                  <span className='certificate_date'>10 de Mayo 2024</span>
+                </div>
+              </article>
+
+              <article className='certificates_certificate'>
+                <div className='certificate_logo'>
+                  <img src={certificadoImg} className='certificates_image' alt='Certificado' />
+                </div>
+
+                <div className='certificates_content'>
+                  <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
+                  <span className='certificate_id'>ID: 823758</span>
+                  <span className='certificate_date'>10 de Mayo 2024</span>
+                </div>
+              </article>
+
+              <article className='certificates_certificate'>
+                <div className='certificate_logo'>
+                  <img src={certificadoImg} className='certificates_image' alt='Certificado' />
+                </div>
+
+                <div className='certificates_content'>
+                  <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
+                  <span className='certificate_id'>ID: 823758</span>
+                  <span className='certificate_date'>10 de Mayo 2024</span>
+                </div>
+              </article>
+
+              <article className='certificates_certificate'>
+                <div className='certificate_logo'>
+                  <img src={certificadoImg} className='certificates_image' alt='Certificado' />
+                </div>
+
+                <div className='certificates_content'>
+                  <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
+                  <span className='certificate_id'>ID: 823758</span>
+                  <span className='certificate_date'>10 de Mayo 2024</span>
+                </div>
+              </article>
+
+            </section>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </>
+  )
+}
+
+export default Cv
+
+
+{/* Habilidades - Caja derecha */ }
+{/* <section className='resume_right'> */ }
+
+{/* <header className='resume_subheader'>
+              <h2 className='resume_subtitle'>Habilidades de <span className="subtitle_color">diseño</span></h2>
+            </header> */}
+
+{/* <div className='resume_skills'>
 
               <article className='skills_title'>
                 <h4 className='skills_text'>Diseño web</h4>
@@ -183,7 +256,7 @@ function Cv() {
 
             </div> */}
 
-            <header className='resume_subheader'>
+{/* <header className='resume_subheader'>
               <h2 className='resume_subtitle'>Habilidades de <span className="subtitle_color">código</span></h2>
             </header>
 
@@ -216,10 +289,10 @@ function Cv() {
                 <div className='skills_percentage skills_percentage-p6'></div>
               </div>
 
-            </div>
+            </div> */}
 
-            {/* Conocimientos - Caja derecha*/}
-            {/* <header className='resume_subheader'>
+{/* Conocimientos - Caja derecha*/ }
+{/* <header className='resume_subheader'>
               <h2 className='resume_subtitle'>Conocimientos</h2>
             </header>
 
@@ -235,75 +308,4 @@ function Cv() {
 
             </section> */}
 
-          </section>
-
-        </div>
-
-        {/* Certificados - Caja derecha*/}
-        <div className='resume_certificates'>
-
-          <header className='resume_subheader'>
-            <h2 className='resume_subtitle'>Certificados</h2>
-          </header>
-
-          <section className='certificates_container'>
-
-            <article className='certificates_certificate'>
-              <div className='certificate_logo'>
-                <img src={certificadoImg} className='certificates_image' alt='Certificado' />
-              </div>
-
-              <div className='certificates_content'>
-                <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
-                <span className='certificate_id'>ID: 823758</span>
-                <span className='certificate_date'>10 de Mayo 2024</span>
-              </div>
-            </article>
-
-            <article className='certificates_certificate'>
-              <div className='certificate_logo'>
-                <img src={certificadoImg} className='certificates_image' alt='Certificado' />
-              </div>
-
-              <div className='certificates_content'>
-                <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
-                <span className='certificate_id'>ID: 823758</span>
-                <span className='certificate_date'>10 de Mayo 2024</span>
-              </div>
-            </article>
-
-            <article className='certificates_certificate'>
-              <div className='certificate_logo'>
-                <img src={certificadoImg} className='certificates_image' alt='Certificado' />
-              </div>
-
-              <div className='certificates_content'>
-                <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
-                <span className='certificate_id'>ID: 823758</span>
-                <span className='certificate_date'>10 de Mayo 2024</span>
-              </div>
-            </article>
-
-            <article className='certificates_certificate'>
-              <div className='certificate_logo'>
-                <img src={certificadoImg} className='certificates_image' alt='Certificado' />
-              </div>
-
-              <div className='certificates_content'>
-                <h4 className='certificates_title'> Full Stack 4Geeks Academy</h4>
-                <span className='certificate_id'>ID: 823758</span>
-                <span className='certificate_date'>10 de Mayo 2024</span>
-              </div>
-            </article>
-
-          </section>
-
-        </div>
-
-      </section>
-
-    </>
-  )
-}
-
-export default Cv
+{/* </section> */ }
